@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>Textanzeige</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      padding: 40px;
+      background-color: #f8f8f8;
+    }
+    textarea {
+      width: 100%;
+      height: 150px;
+      font-size: 16px;
+      padding: 10px;
+    }
+    .anzeige {
+      margin-top: 30px;
+      font-size: 40px;
+      background-color: white;
+      padding: 20px;
+      border: 2px solid #ccc;
+      white-space: pre-wrap;
+    }
+  </style>
+</head>
+<body>
+  <h1>Schreibe deinen Text:</h1>
+  <textarea oninput="document.getElementById('ausgabe').textContent = this.value"></textarea>
+  <div class="anzeige" id="ausgabe"></div>
+</body>
+</html>
